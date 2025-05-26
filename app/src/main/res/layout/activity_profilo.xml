@@ -1,0 +1,153 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lemon_cream"
+    tools:context=".activity.ProfiloActivity">
+
+    <TextView
+        android:id="@+id/settingsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Account"
+        android:textAlignment="center"
+        android:textColor="@color/navy"
+        android:textSize="@dimen/title_dimen"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_app"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cogwheel" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/rounded_cont_top"
+        android:backgroundTint="@color/navy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_app"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/showMaxPrestitiTV"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="260dp"
+            android:text="TextView"
+            android:textColor="@color/lemon_cream"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/NumPrestitiAttualiTV"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/maxNumPrestitiTextView"
+            android:layout_width="285dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="25dp"
+            android:text="Numero massimo di prestiti"
+            android:textColor="@color/lemon_cream"
+            android:textSize="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NumPrestitiAttualiTV" />
+
+        <TextView
+            android:id="@+id/usernameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="89dp"
+            android:text="Nome Utente"
+            android:textAlignment="center"
+            android:textColor="@color/lemon_cream"
+            android:textSize="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginBottom="100dp"
+            android:backgroundTint="@color/lemon_cream"
+            android:text="Storico prestiti"
+            android:textColor="@color/navy"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/NumPrestitiAttualiTV"
+            android:layout_width="285dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="56dp"
+            android:text="Prestiti attuali"
+            android:textColor="@color/lemon_cream"
+            android:textSize="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usernameText" />
+
+        <TextView
+            android:id="@+id/showNumPrestitiTV"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="194dp"
+            android:text="TextView"
+            android:textColor="@color/lemon_cream"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/NumPrestitiAttualiTV"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/esciButton"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#EF1000"
+        android:text="Esci"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:cornerRadius="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomButtonsLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/bottomButtonsLayout"
+        layout="@layout/bottom_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
