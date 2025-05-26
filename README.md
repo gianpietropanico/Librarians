@@ -1,4 +1,7 @@
-![title](https://github.com/AntonioTagliafierro/TheLibrariansApp/blob/master/assets/titolo.jpg)
+#  Librarians 
+
+**This project was developed as part of a university exam** at the University of Naples Federico II.  
+It includes an Android client and a backend server designed to work together using Docker and modern mobile development tools.
 
 # Installation
 Server
